@@ -20,10 +20,10 @@
 + Frontend: 
 + Database: 
 ## Thông tin thành viên
-|STT|  MSSV  | Họ và Tên              | GitHub                        | Email                |
-|:- |:-------|:---------------------- |:----------------------------- |:---------------------|
-| 1 |22521374|Phạm Trần Dạ Thảo       |https://github.com/dthcora     |22521374@gm.uit.edu.vn|
-| 2 |22520976|Nguyễn Phan Thảo Nguyên |https://github.com/nguynnn15704|22520976@gm.uit.edu.vn|
-| 3 |22520958|Nguyễn Thị Hồng Ngọc    |https://github.com/hnocc       |22520958@gm.uit.edu.vn|
-| 4 |22520975|Nguyễn Lâm Khôi Nguyên  |https://github.com/g           |22520975@gm.uit.edu.vn|
+|STT|  MSSV  | Họ và Tên              | Email                |
+|:- |:-------|:---------------------- | :--------------------|
+| 1 |22521374|Phạm Trần Dạ Thảo       |22521374@gm.uit.edu.vn|
+| 2 |22520976|Nguyễn Phan Thảo Nguyên |22520976@gm.uit.edu.vn|
+| 3 |22520958|Nguyễn Thị Hồng Ngọc    |22520958@gm.uit.edu.vn|
+| 4 |22520975|Nguyễn Lâm Khôi Nguyên  |22520975@gm.uit.edu.vn|
 
