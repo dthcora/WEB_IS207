@@ -1,0 +1,46 @@
+bbody {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4 !important;
+}
+.breadcrumb {
+    background-color: #f4f4f4 !important;
+}
+#featured {
+    padding-top: 54px !important;
+    margin-top: 10px !important;
+    padding-bottom: 0px !important;
+    background-color: #f4f4f4 !important;
+}
+.my-5 {
+    padding-top: 0px !important;
+}
+.table {
+    background-color: #C4B6AB;
+}
+.table .btn {
+    border: none;
+    border-radius: 30px;
+}
+.container .col-12 {
+    margin-left: 79%;
+}
+
+#account-panel .nav-link {
+    background-color: #f8f9fa; /* Màu nền mặc định */
+    color: #333; /* Màu chữ mặc định */
+    border-radius: 30px; /* Bo tròn các nút */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    font-weight: bold; /* Chữ đậm */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng mượt mà khi thay đổi */
+}
+
+#account-panel .nav-link:hover {
+    background-color: #523F31; /* Màu nền khi di chuột */
+    color: #fff; /* Màu chữ khi di chuột */
+}
+
+#account-panel .nav-link.active {
+    background-color: #895737 !important; /* Màu nền khi nút được chọn */
+    color: #fff !important; /* Màu chữ khi nút được chọn */
+}
+

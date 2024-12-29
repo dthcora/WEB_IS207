@@ -1,0 +1,39 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.breadcrumb {
+    background-color: #f4f4f4 !important;
+}
+#featured {
+    padding-top: 54px !important;
+    margin-top: 10px !important;
+    padding-bottom: 0px !important;
+    background-color: #f4f4f4 !important;
+}
+.my-5 {
+    padding-top: 0px !important;
+}
+.account-update-form {
+    max-width: 1000px;
+    width: 650px;
+    background: #C4B6AB;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left !important;
+    margin: auto;
+}
+.account-update-form label {
+    padding-left: 15px;
+}
+.account-update-form input {
+    width: 600px !important;
+}
+.account-update-form .btn-primary {
+    width: 600px !important; /* Hoặc giữ nguyên kích thước */
+    padding: 10px 20px !important; /* Thêm khoảng cách padding */
+    margin-left: 10px !important;
+}

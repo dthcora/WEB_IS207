@@ -1,0 +1,160 @@
+/* Breadcrumb container styles */
+.breadcrumb {
+    background-color: #ffffff !important;      /* Sáng hơn để tạo sự thoáng */
+    padding: 10px 15px;            /* Khoảng cách vừa đủ */
+    margin-top: 20px;              /* Khoảng cách trên */
+    font-size: 14px;               /* Kích thước chữ chuẩn */
+    list-style: none;              /* Xóa dấu đầu dòng */
+    display: flex;                 /* Căn các mục breadcrumb thành hàng ngang */
+    gap: 5px;                     /* Khoảng cách giữa các mục */
+    align-items: center;           /* Căn giữa các mục theo chiều dọc */
+}
+
+/* Breadcrumb items */
+.breadcrumb-item {
+    color: #6c757d;                /* Màu chữ nhạt hơn để phân biệt */
+    font-weight: 500;              /* Tăng độ đậm chữ một chút */
+    transition: color 0.3s ease;   /* Hiệu ứng màu */
+}
+
+/* Links inside breadcrumb */
+.breadcrumb-item a {
+    color: #2d1e17;                /* Màu xanh dịu mắt */
+    text-decoration: none;         /* Xóa gạch chân */
+    transition: color 0.3s ease;   /* Hiệu ứng màu khi hover */
+    font-weight: 600;              /* Chữ đậm hơn */
+}
+
+/* Hover effect for links */
+.breadcrumb-item a:hover {
+    color: #895737;                /* Màu xanh đậm hơn khi hover */
+    text-decoration: underline;    /* Gạch chân khi hover */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "›";
+    color: #6c757d;
+    margin: 0 3px; /* Điều chỉnh khoảng cách giữa các mục */
+}
+
+/* Current breadcrumb item */
+.breadcrumb-item.active {
+    color: #212529;                /* Màu tối hơn để làm nổi bật */
+    font-weight: 700;              /* Chữ đậm hơn */
+    cursor: default;               /* Không cho phép click */
+}
+
+/* Phần form tìm kiếm (Search Section) */
+#search .form-check {
+    background-color: #8d6e63; /* Đảm bảo các mục chọn có màu nền giống */
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 5px; /* Bo góc cho các mục chọn */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Đổ bóng nhẹ cho mỗi mục chọn */
+    display: flex; /* Dùng flexbox để căn chỉnh */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa radio và label */
+}
+
+#search .form-check input[type="radio"] {
+    accent-color: #2D802E; /* Màu nút radio */
+    margin: 0; /* Đảm bảo không có khoảng cách mặc định */
+}
+
+#search .form-check label {
+    font-weight: bold;
+    color: #fff;
+    margin: 0; /* Đảm bảo không có khoảng cách mặc định */
+}
+
+
+/* Nút submit 
+#search .form-group input[type="submit"] {
+    background-color: #2D802E; 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#search .form-group input[type="submit"]:hover {
+    background-color: #2D802E; 
+}
+*/
+
+/* Thanh range */
+#search input[type="range"] {
+    width: 100%;
+    background-color: #f4f4f4; /* Màu nền cho thanh range */
+    border-radius: 5px; /* Bo góc thanh range */
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px; /* Chiều cao thanh range */
+}
+
+#search input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #ddd; /* Màu cho đường chạy của thanh range */
+    height: 8px;
+}
+
+#search input[type="range"]::-webkit-slider-thumb {
+    background-color: #6d4c41; /* Màu cho nút trượt */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search input[type="range"]:focus {
+    outline: none; /* Tắt viền khi focus */
+}
+
+#search input[type="range"]:hover::-webkit-slider-thumb {
+    background-color: #895737; /* Thay đổi màu nút trượt khi hover */
+}
+
+/* Đảm bảo phần nội dung bên phải (Products Section) không bị thay đổi */
+#products {
+    background-color: transparent; /* Không thay đổi nền của phần sản phẩm */
+}
+
+/* Đảm bảo sản phẩm không bị ảnh hưởng */
+.product {
+    background-color: transparent; /* Sản phẩm không thay đổi nền */
+}
+
+/* Pagination section */
+.pagination {
+    background-color: transparent; /* Màu nền của phần phân trang */
+    margin-top: 20px; /* Khoảng cách trên */
+}
+
+.pagination .page-item {
+    background-color: transparent; /* Đảm bảo các nút phân trang có nền giống */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination .page-item:hover {
+    background-color: #895737; /* Thêm màu nền khi hover */
+}
+
+.pagination .page-link {
+    color: #523F31; /* Màu chữ cho các liên kết phân trang */
+    transition: color 0.3s ease;
+}
+
+.pagination .page-link:hover {
+    color: #895737; /* Thay đổi màu chữ khi hover */
+}
+
+/* Thay đổi màu nền cho nút phân trang hiện tại (active) */
+.pagination .page-item.active .page-link {
+    background-color: #523F31; /* Nền xanh cho nút đang được chọn */
+    color: white; /* Chữ trắng cho nút đang được chọn */
+    border: 1px solid #523F31; /* Viền xanh cho nút active */
+}

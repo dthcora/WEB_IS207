@@ -1,0 +1,148 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6ded3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 120px;
+}
+
+.login-container {
+    max-width: 800px;
+    width: 500px;
+    background: #C4B6AB;
+    padding: 30px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: auto;
+}
+
+.login-container h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2d1e17;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #555;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    color: #523F31;
+}
+
+.login-container .btn-google,
+.btn-facebook, .btn-primary {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.btn-google {
+    background: #ffffff;
+    color: #757575;
+    border: 1px solid black;
+}
+
+.btn-google i {
+    margin-right: 10px;
+    color: crimson;
+}
+
+.btn-facebook {
+    background: #4267B2;
+    color: #ffffff;
+    border: 1px solid black;
+    padding: 10px 20px !important;
+    border-radius: 15px !important;
+}
+
+.btn-primary {
+    background-color: #523F31;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.1rem;
+    padding: 12px;
+}
+
+.btn-primary:hover {
+    background:  #895737;
+}
+
+input {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+input::placeholder {
+    font-size: 15px;
+}
+
+.register-prompt {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #555;
+}
+
+.register-prompt a {
+    color: #895737;
+    text-decoration: none;
+}
+
+.register-prompt a:hover {
+    text-decoration: underline;
+    color: #523F31;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 5px 0;
+    color: #2d1e17;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.divider:not(:empty)::before {
+    margin-right: .5em;
+}
+
+.divider:not(:empty)::after {
+    margin-left: .5em;
+}
+
+footer {
+    margin-top: auto;
+}

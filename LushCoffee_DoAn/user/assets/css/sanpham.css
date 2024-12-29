@@ -1,0 +1,212 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #efede9 !important; /* Nền trắng */
+    margin: 0;
+    padding: 0;
+}
+
+/* Căn chỉnh bố cục chính */
+.main-container1 {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #efede9 !important;
+}
+
+/* Cột bên trái (lọc) */
+.sidebar {
+    flex: 1;
+    max-width: 250px;
+    background: #d7ccc8; /* Nền trắng */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 400px;
+}
+
+.sidebar h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+
+.form-check-input {
+    margin-right: 0.5rem;
+}
+
+.form-check-label {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Range input styling */
+input[type="range"] {
+    width: 100%;
+    margin: 0.5rem 0;
+    accent-color: #523F31; /* Green color */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #523F31; /* Màu thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #895737; /* Màu thumb khi hover */
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Selected price text */
+.text-center {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444;
+}
+
+
+.sidebar .form-check {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.sidebar button {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.sidebar button {
+    background-color: #523F31;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+    background-color:  #895737
+}
+/* Khu vực sản phẩm */
+.product-container {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 0;
+    justify-content: center; /* Căn giữa sản phẩm */
+    background-color: #efede9 !important;
+}
+
+/* Khung sản phẩm */
+.product {
+    background: #ffffff; /* Nền trắng */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 200px;
+    width: 100%;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-container {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+}
+
+.product a {
+    text-decoration: none;
+    color: inherit; 
+    transition: color 0.3s ease; 
+}
+
+/* Phân trang */
+.my-pagination1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: -10px;
+    list-style: none; 
+    padding: 0;
+    margin-left: 150px;
+}
+
+
+/* Nút phân trang */
+.my-page-item .my-page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff; /* Nền trắng */
+    color: #523F31; 
+    border: 1px solid #ddd; /* Viền nhạt */
+    border-radius: 8px; /* Bo góc */
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none; /* Loại bỏ gạch chân */
+    margin: 3px;
+}
+
+/* Hiệu ứng hover */
+.my-page-item .my-page-link:hover {
+    background-color: #895737; 
+    color: #fff; /* Chữ trắng khi hover */
+}
+
+/* Nút đang được chọn (active) */
+.my-page-item.active .my-page-link {
+    background-color: #523F31;
+    color: #fff;
+}
+
+#featured {
+    padding-top: 30px !important;  /* Decrease padding above featured section */
+    padding-bottom: 10px !important;  /* Decrease padding below featured section */
+}

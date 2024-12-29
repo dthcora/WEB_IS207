@@ -1,0 +1,112 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6ded3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 120px;
+}
+
+.register-container {
+    max-width: 800px;
+    width: 700px;
+    background: #C4B6AB;
+    padding: 30px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    text-align: left;
+}
+
+.register-container h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2d1e17;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.form-row ::placeholder {
+    font-size: 14px;
+}
+
+.form-control {
+    width: 100%;
+    height: 45px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #8B4513;
+    outline: none; /* Xóa đường viền outline mặc định */
+    box-shadow: 0 0 5px rgba(139, 69, 19, 0.5); /* Hiệu ứng đổ bóng màu nâu cà phê */
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    padding-bottom: 15px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.btn-primary {
+    background-color: #523F31 !important;
+    border-radius: 30px !important;
+    border: none !important;
+    font-size: 1.1rem !important;
+    padding: 12px !important;
+}
+
+.btn-primary:hover {
+    background:  #895737 !important;
+}
+
+.checkbox-container a {
+    color: #895737;
+    text-decoration: none;
+}
+
+.checkbox-container a:hover {
+    text-decoration: underline; /* Hiệu ứng hover */
+    color: #523F31;
+}
+
+.auth-footer a {
+    color: #895737;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline; /* Hiệu ứng hover */
+    color: #523F31;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+footer {
+    margin-top: auto;
+}

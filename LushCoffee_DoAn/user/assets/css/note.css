@@ -1,0 +1,66 @@
+/* CSS chung cho tất cả các trạng thái */
+.product-status {
+    display: inline-block;
+    padding: 5px 10px;           /* Giảm padding để khung nhỏ gọn hơn */
+    font-size: 12px;             /* Giảm kích thước chữ */
+    font-weight: bold;
+    color: white;                /* Màu chữ */
+    text-transform: uppercase;
+    border-radius: 15px;         /* Giảm bo góc để khung cân đối hơn */
+    position: absolute;          /* Đặt vào vị trí tuyệt đối */
+    top: 12px;                   /* Cách cạnh trên ít hơn */
+    left: 12px;                  /* Cách cạnh trái ít hơn */
+    margin: 0;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hiệu ứng mượt mà */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bóng nhẹ hơn */
+    display: flex;
+    align-items: center;         /* Căn giữa icon và text */
+    justify-content: center;
+}
+
+/* Khoảng cách giữa icon và chữ */
+.product-status i {
+    margin-right: 8px;
+    font-size: 1.2em;             /* Tăng kích thước icon để dễ nhìn hơn */
+}
+
+/* Màu sắc trạng thái */
+.product-status.in-stock {
+    background-color: #28a745;    /* Màu xanh lá cho In Stock */
+}
+
+.product-status.new-product {
+    background-color: #fd7e14;    /* Màu cam cho New Product */
+}
+
+.product-status.pre-order {
+    background-color: #17a2b8;    /* Màu xanh dương cho Pre Order */
+}
+
+.product-status.sold-out {
+    background-color: #ff4d4d;    /* Màu đỏ cho Sold Out */
+}
+
+/* Hiệu ứng hover cho trạng thái */
+.product-status:hover {
+    transform: translateY(-5px); /* Di chuyển lên một chút khi hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bóng đổ mạnh hơn khi hover */
+}
+
+/* Tạo bóng đổ cho trạng thái */
+.product-status:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(12px);           /* Làm mờ nhiều hơn */
+    z-index: -1;
+}
+
+/* Đảm bảo trạng thái luôn hiển thị trên các lớp khác */
+.badge {
+    z-index: 10 !important;       /* Đảm bảo trạng thái luôn nổi bật */
+}

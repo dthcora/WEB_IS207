@@ -1,0 +1,108 @@
+/* Cập nhật form tài khoản */
+.account-update-form {
+    padding: 0px;
+    border-radius: 5px;
+    background-color: #C4B6AB; /* Nền nhạt nhất từ màu Silk */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+}
+
+/* Đảm bảo màu chữ cho các label */
+.account-update-form label {
+    color: #2D1E17;  /* Màu Graphite cho chữ */
+    font-size: 1rem;
+    font-weight: 600;
+    width: 500px;
+}
+
+/* Cập nhật màu chữ cho các trường nhập liệu */
+.account-update-form .form-control {
+    color: #2D1E17; /* Màu chữ Graphite */
+    background-color: #F7F4F2; /* Màu nền nhạt trung tính */
+    border: 1px solid #9D8A7C; /* Viền màu Squirrel */
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 15px;
+    transition: border-color 0.3s ease;
+}
+
+/* Cập nhật màu chữ cho các input khi đang focus */
+.account-update-form .form-control:focus {
+    color: #2D1E17; /* Màu chữ khi focus */
+    border-color: #523F31; /* Màu viền khi focus */
+    background-color: #FFF; /* Màu nền trắng khi focus */
+}
+
+/* Cập nhật kiểu cho các thông báo */
+.alert {
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #796254; /* Màu nền Roman Coffee */
+    color: #FFF; /* Màu chữ trắng */
+}
+
+/* Cập nhật màu chữ cho nút */
+.account-update-form .btn {
+    font-size: 1.1rem;
+    padding: 12px;
+    background-color: #523F31; /* Màu nút Judge Gray */
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white; /* Màu chữ mặc định */
+    border: none;
+    margin-top: 10px;
+}
+
+.account-update-form .btn:hover {
+    background-color: #796254; /* Màu nút hover Roman Coffee */
+    color: white;
+}
+
+/* Tăng khoảng cách giữa các trường nhập liệu */
+.account-update-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Cập nhật bảng */
+.table {
+    width: 100%;
+    table-layout: auto;
+    background-color: #F7F4F2; /* Nền nhạt trung tính */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Đảm bảo các th và td trong bảng luôn hiển thị */
+.table th, .table td {
+    color: #2D1E17; /* Màu Graphite cho chữ */
+    background-color: #FFF;
+    text-align: center;
+    padding: 14px;
+    font-size: 1rem;
+}
+
+/* Cập nhật hiệu ứng hover cho bảng */
+.table-hover tbody tr:hover {
+    background-color: #C4B6AB; /* Màu nền Silk khi hover */
+}
+
+/* Đảm bảo màu chữ cho các th */
+.table thead th {
+    font-weight: 600;
+    color: #FFF; /* Màu chữ trắng */
+    background-color: #2D1E17; /* Nền Graphite */
+}
+
+/* Cập nhật màu chữ cho các nút */
+.table .btn {
+    background-color: #523F31;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white;
+}
+
+.table .btn:hover {
+    background-color: #796254; /* Màu hover Roman Coffee */
+    color: white;
+}

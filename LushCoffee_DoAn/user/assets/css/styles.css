@@ -1,0 +1,287 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4; /* Màu nền sáng */
+    color: #000000;
+}
+
+/* Home Section (Banner) */
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Banner chiếm toàn bộ chiều cao màn hình */
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner-image.jpg') center/cover no-repeat;
+}
+
+.home-slider {
+    display: flex;
+    width: 100%;
+    height: 100%; /* Đảm bảo ảnh banner cũng chiếm toàn bộ chiều cao */
+    transition: transform 1s ease-in-out;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Hiệu ứng chuyển ảnh cho banner khi hover */
+#home:hover .home-slider {
+    transform: translateX(-100%);
+}
+
+.home-slider:hover .banner-img {
+    opacity: 0.7; /* Hiệu ứng mờ khi hover */
+}
+
+/* Featured Section */
+#featured h3 {
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#featured {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+}
+
+#featured h4 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #523F31;
+}
+
+#featured hr {
+    width: 100%;
+    border: 2px solid #64001d;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#featured p {
+    font-size: 20px;
+    color: #777;
+}
+
+/* Product Link Styles */
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.product-link:hover {
+    color: #2D802E; /* Màu sắc thay đổi khi hover */
+}
+
+/* Product Styles */
+.product {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Tăng độ bo góc */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin-bottom: 30px; /* Tăng khoảng cách giữa các hàng */
+}
+
+.product:hover {
+    transform: translateY(-10px); /* Hiệu ứng nâng lên */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); /* Đổ bóng nổi bật hơn */
+}
+
+/* Sản phẩm - Ảnh chính */
+.product img {
+    width: 100%; /* Đảm bảo ảnh phù hợp kích thước khung */
+    height: 200px; /* Cố định chiều cao */
+    object-fit: cover; /* Giữ tỷ lệ và cắt nếu cần */
+    border-bottom: 2px solid #37b24d; /* Đường viền dưới ảnh */
+    transition: transform 0.5s ease;
+}
+
+/* Hiệu ứng hover cho ảnh */
+.product:hover img {
+    transform: scale(1.08) rotate(2deg); /* Phóng to + hiệu ứng xoay nhẹ */
+}
+
+/* Ảnh thứ hai */
+.product .img-second {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.product:hover .img-second {
+    opacity: 1;
+    transform: scale(1.1); /* Phóng to ảnh thứ hai khi hover */
+}
+
+/* Sản phẩm - Nội dung */
+.product-content {
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.product-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.product-title:hover {
+    color: #37b24d; /* Đổi màu tiêu đề khi hover */
+}
+
+.product-price {
+    font-size: 14px;
+    color: #888;
+}
+
+.product-price span {
+    color: #37b24d; /* Nhấn mạnh giá */
+    font-weight: bold;
+}
+
+
+/* Star Rating */
+.star i {
+    color: #ffd700;
+}
+
+/* Product Name and Price */
+.p-product {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.p-price {
+    font-size: 13px;
+    color: #2D802E;
+    margin-top: 10px;
+}
+
+.p-price-discount {
+    color: #777;
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+/* Buy Button */
+.buy-btn {
+    background-color: #2D802E;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #2D802E;
+    transform: scale(1.05); /* Phóng to nút khi hover */
+}
+
+/* Pagination */
+.pagination {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-item.active .page-link {
+    background-color: #2D802E;
+    color: white;
+}
+
+.page-link {
+    color: #2D802E;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: #2D802E;
+    color: white;
+    transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+}
+
+/* Brand Section */
+#brand {
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+#brand img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+#brand img:hover {
+    transform: scale(1.05); /* Phóng to logo khi hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-slider {
+        flex-direction: column;
+    }
+
+    .product {
+        margin: 15px 0;
+    }
+
+    .product img {
+        height: 200px;
+    }
+
+    #featured h3 {
+        font-size: 28px;
+    }
+
+    #featured p {
+        font-size: 18px;
+    }
+
+    .buy-btn {
+        font-size: 14px;
+    }
+
+    .pagination .page-link {
+        padding: 8px 15px;
+    }
+
+    .pagination {
+        font-size: 14px;
+    }
+}
